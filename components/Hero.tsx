@@ -1,16 +1,32 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
       id="home"
       className="relative h-screen overflow-hidden"
     >
-      {/* Background */}
-      <div
-        className="absolute inset-0 -scale-x-100 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/hero.png')",
-        }}
-      />
+      {/* Desktop Background */}
+      <div className="absolute inset-0 hidden md:block">
+        <Image
+          src="/hero.png"
+          alt="Iris Keen Hero"
+          fill
+          priority
+          className="-scale-x-100 object-cover"
+        />
+      </div>
+
+      {/* Mobile Background */}
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src="/hero-mobile.png"
+          alt="Iris Keen Hero Mobile"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0F3D3E]/25" />
