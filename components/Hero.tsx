@@ -28,14 +28,14 @@ export default function Hero() {
         />
       </div>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-[#0F3D3E]/20 to-[#0F3D3E]/45" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/18 via-[#0F3D3E]/18 to-[#0F3D3E]/42" />
 
       {/* Hero Content */}
       <div className="relative z-10 flex h-full items-center">
-        <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-6 md:px-20">
+        <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          <div className="w-full max-w-[560px] pt-16 md:pt-32">
+          <div className="w-full max-w-[560px] pt-28 md:pt-32">
 
             <h1
               dir="rtl"
@@ -50,7 +50,7 @@ export default function Hero() {
                   font-semibold
                   tracking-tight
                   text-[#E8A87C]
-                  drop-shadow-[0_5px_12px_rgba(0,0,0,.8)]
+                  drop-shadow-[0_6px_14px_rgba(0,0,0,.75)]
                 "
               >
                 رحلتك تبدأ
@@ -67,8 +67,7 @@ export default function Hero() {
                   tracking-[-0.04em]
                   text-white
                   leading-none
-                  drop-shadow-[0_10px_25px_rgba(0,0,0,.85)]
-                  [text-shadow:0_0_12px_rgba(255,255,255,.08),0_4px_18px_rgba(0,0,0,.9)]
+                  drop-shadow-[0_10px_24px_rgba(0,0,0,.9)]
                 "
               >
                 <span>من </span>
@@ -86,8 +85,9 @@ export default function Hero() {
                 md:text-[1.35rem]
                 leading-7
                 md:leading-9
-                text-white/95
-                drop-shadow-[0_4px_12px_rgba(0,0,0,.9)]
+                font-medium
+                text-white
+                drop-shadow-[0_5px_14px_rgba(0,0,0,.85)]
               "
             >
               تجارب سفر مصممة بعناية
