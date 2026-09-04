@@ -37,50 +37,58 @@ export default function Hero() {
 
           <div className="w-full max-w-[620px] pt-3 md:pt-20">
 
-            <h1
-              dir="rtl"
-              className="
-                text-center
-                md:text-right
-                leading-[0.98]
-              "
-            >
-              {/* رحلتك تبدأ */}
-              <span
-                className="
-                  block
-                  text-[1.7rem]
-                  sm:text-[1.9rem]
-                  md:text-[3.1rem]
-                  font-extrabold
-                  md:font-bold
-                  tracking-tight
-                  text-white
-                  drop-shadow-[0_10px_28px_rgba(0,0,0,1)]
-                "
-              >
-                رحلتك تبدأ
-              </span>
+            {/* Mobile Glass Only */}
+            <div className="inline-block rounded-[30px] bg-white/8 backdrop-blur-md px-5 py-4 md:bg-transparent md:backdrop-blur-none md:p-0">
 
-              {/* من الاختيار الصحيح */}
-              <span
+              <h1
+                dir="rtl"
                 className="
-                  mt-1
-                  block
-                  text-[1.8rem]
-                  sm:text-[2.1rem]
-                  md:text-[3.5rem]
-                  font-black
-                  md:font-extrabold
-                  tracking-[-0.02em]
-                  leading-none
-                  text-[#E8A87C]
-                  drop-shadow-[0_10px_30px_rgba(0,0,0,1)]
+                  text-center
+                  md:text-right
+                  leading-[0.98]
                 "
               >
-                من الاختيار الصحيح
-              </span>
-            </h1>
+                {/* رحلتك تبدأ */}
+                <span
+                  className="
+                    block
+                    text-[1.7rem]
+                    sm:text-[1.9rem]
+                    md:text-[3.1rem]
+                    font-extrabold
+                    md:font-bold
+                    tracking-tight
+                    text-white
+                    drop-shadow-[0_10px_28px_rgba(0,0,0,1)]
+                    [@media(max-width:767px)]:[-webkit-text-stroke:0.15px_rgba(0,0,0,.18)]
+                  "
+                >
+                  رحلتك تبدأ
+                </span>
+
+                {/* من الاختيار الصحيح */}
+                <span
+                  className="
+                    mt-1
+                    block
+                    text-[1.8rem]
+                    sm:text-[2.1rem]
+                    md:text-[3.5rem]
+                    font-black
+                    md:font-extrabold
+                    tracking-[-0.02em]
+                    leading-none
+                    text-[#E8A87C]
+                    drop-shadow-[0_10px_30px_rgba(0,0,0,1)]
+                    [@media(max-width:767px)]:[-webkit-text-stroke:0.15px_rgba(0,0,0,.16)]
+                  "
+                >
+                  من الاختيار الصحيح
+                </span>
+
+              </h1>
+
+            </div>
 
             {/* Button */}
             <div className="mt-36 md:mt-24 flex justify-center md:justify-start">
