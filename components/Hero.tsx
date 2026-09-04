@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen overflow-hidden"
+      className="relative min-h-screen overflow-hidden"
     >
       {/* Desktop Background */}
       <div className="absolute inset-0 hidden md:block">
@@ -32,10 +32,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/18 via-[#0F3D3E]/18 to-[#0F3D3E]/42" />
 
       {/* Hero Content */}
-      <div className="relative z-10 flex h-full items-center">
+      <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          {/* نزلنا المحتوى قليلًا */}
           <div className="w-full max-w-[620px] pt-20 md:pt-28">
 
             <h1
@@ -77,37 +76,19 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* الوصف */}
-            <p
-              className="
-                mt-8
-                text-center
-                md:text-right
-                text-[0.95rem]
-                md:text-[1.05rem]
-                leading-7
-                md:leading-8
-                font-medium
-                text-white
-                drop-shadow-[0_5px_12px_rgba(0,0,0,.9)]
-              "
-            >
-              تجارب سفر مصممة بعناية
-              <br />
-              بأفضل الأسعار وخدمة شخصية راقية.
-            </p>
-
-            {/* Buttons */}
-            <div className="mt-10 flex flex-col md:flex-row gap-4 w-[72%] md:w-auto mx-auto md:mx-0">
+            {/* زر واحد */}
+            <div className="mt-24 md:mt-28 flex justify-center md:justify-start">
 
               <a
                 href="#hotels"
                 className="
+                  w-[68%]
+                  md:w-auto
                   rounded-full
                   bg-gradient-to-b
                   from-[#145254]
                   to-[#0F3D3E]
-                  px-5
+                  px-6
                   md:px-8
                   py-4
                   text-base
@@ -123,29 +104,6 @@ export default function Hero() {
                 "
               >
                 ابدأ رحلتك
-              </a>
-
-              <a
-                href="#hotels"
-                className="
-                  rounded-full
-                  border
-                  border-white/30
-                  bg-white/12
-                  backdrop-blur-md
-                  px-5
-                  md:px-8
-                  py-4
-                  text-base
-                  md:text-lg
-                  text-white
-                  text-center
-                  transition-all
-                  duration-300
-                  hover:bg-white/18
-                "
-              >
-                استكشف الفنادق
               </a>
 
             </div>
