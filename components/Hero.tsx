@@ -35,7 +35,6 @@ export default function Hero() {
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          {/* رفعنا العنوان قليلاً */}
           <div className="w-full max-w-[620px] pt-3 md:pt-20">
 
             <h1
@@ -51,8 +50,8 @@ export default function Hero() {
                   md:text-[3.1rem]
                   font-semibold
                   tracking-tight
-                  text-white
-                  drop-shadow-[0_6px_16px_rgba(0,0,0,.85)]
+                  text-[#E8A87C]
+                  drop-shadow-[0_10px_24px_rgba(0,0,0,.92)]
                 "
               >
                 رحلتك تبدأ
@@ -69,8 +68,8 @@ export default function Hero() {
                   font-bold
                   tracking-[-0.03em]
                   leading-none
-                  text-[#E8A87C]
-                  drop-shadow-[0_10px_24px_rgba(0,0,0,.92)]
+                  text-white
+                  drop-shadow-[0_6px_16px_rgba(0,0,0,.85)]
                 "
               >
                 من الاختيار الصحيح
