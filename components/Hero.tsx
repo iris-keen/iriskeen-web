@@ -51,7 +51,8 @@ export default function Hero() {
                   font-semibold
                   tracking-tight
                   text-[#E8A87C]
-                  drop-shadow-[0_10px_24px_rgba(0,0,0,.92)]
+                  [text-shadow:0_2px_6px_rgba(0,0,0,.45),0_10px_24px_rgba(0,0,0,.88)]
+                  [-webkit-text-stroke:0.5px_rgba(0,0,0,.22)]
                 "
               >
                 رحلتك تبدأ
@@ -65,11 +66,12 @@ export default function Hero() {
                   text-[1.8rem]
                   sm:text-[2.1rem]
                   md:text-[3.5rem]
-                  font-bold
-                  tracking-[-0.03em]
+                  font-extrabold
+                  tracking-[-0.015em]
                   leading-none
                   text-white
-                  drop-shadow-[0_6px_16px_rgba(0,0,0,.85)]
+                  [text-shadow:0_2px_6px_rgba(0,0,0,.45),0_8px_20px_rgba(0,0,0,.82)]
+                  [-webkit-text-stroke:0.4px_rgba(0,0,0,.18)]
                 "
               >
                 من الاختيار الصحيح
