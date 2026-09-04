@@ -40,8 +40,6 @@ export default function Hero() {
             <h1
               dir="rtl"
               className="
-                font-[family-name:var(--font-hero-arabic)]
-                md:font-[inherit]
                 text-center
                 md:text-right
                 leading-[0.98]
@@ -54,10 +52,11 @@ export default function Hero() {
                   text-[1.7rem]
                   sm:text-[1.9rem]
                   md:text-[3.1rem]
-                  font-bold
+                  font-extrabold
+                  md:font-bold
                   tracking-tight
                   text-white
-                  drop-shadow-[0_8px_20px_rgba(0,0,0,.95)]
+                  drop-shadow-[0_10px_28px_rgba(0,0,0,1)]
                 "
               >
                 رحلتك تبدأ
@@ -71,11 +70,12 @@ export default function Hero() {
                   text-[1.8rem]
                   sm:text-[2.1rem]
                   md:text-[3.5rem]
-                  font-extrabold
-                  tracking-[-0.015em]
+                  font-black
+                  md:font-extrabold
+                  tracking-[-0.02em]
                   leading-none
                   text-[#E8A87C]
-                  drop-shadow-[0_8px_22px_rgba(0,0,0,.95)]
+                  drop-shadow-[0_10px_30px_rgba(0,0,0,1)]
                 "
               >
                 من الاختيار الصحيح

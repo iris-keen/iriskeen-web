@@ -3,7 +3,6 @@ import {
   Geist,
   Geist_Mono,
   Cormorant_Garamond,
-  Readex_Pro,
 } from "next/font/google";
 import "./globals.css";
 
@@ -21,13 +20,6 @@ const english = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-english",
-  display: "swap",
-});
-
-const heroArabic = Readex_Pro({
-  subsets: ["arabic"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-hero-arabic",
   display: "swap",
 });
 
@@ -80,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${english.variable} ${heroArabic.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${english.variable} antialiased`}
       >
         {children}
       </body>
