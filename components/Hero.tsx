@@ -35,7 +35,6 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          {/* نزلناه شوي */}
           <div className="w-full max-w-[620px] pt-14 md:pt-24">
 
             <h1
@@ -69,7 +68,7 @@ export default function Hero() {
                   font-bold
                   tracking-[-0.03em]
                   leading-none
-                  text-[#D4AF37]
+                  text-[#E8A87C]
                   drop-shadow-[0_8px_22px_rgba(0,0,0,.9)]
                 "
               >
