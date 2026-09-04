@@ -1,0 +1,19 @@
+{
+    "language": "English",
+  
+    "nav": {
+      "home": "Home",
+      "hotels": "Hotels",
+      "offers": "Offers",
+      "about": "About",
+      "contact": "Contact"
+    },
+  
+    "hero": {
+      "badge": "Your Journey Starts",
+      "title": "Choose With Confidence",
+      "description": "Luxury travel experiences with carefully selected hotels and personalized service.",
+      "primary": "Start Your Journey",
+      "secondary": "Explore Hotels"
+    }
+  }
