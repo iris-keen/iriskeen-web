@@ -39,7 +39,7 @@ export default function Hero() {
 
             <h1
               dir="rtl"
-              className="text-center md:text-right leading-[1.05]"
+              className="text-center md:text-right leading-[0.98]"
             >
               {/* رحلتك تبدأ */}
               <span
@@ -48,11 +48,10 @@ export default function Hero() {
                   text-[1.7rem]
                   sm:text-[1.9rem]
                   md:text-[3.1rem]
-                  font-semibold
+                  font-bold
                   tracking-tight
-                  text-[#E8A87C]
-                  [text-shadow:0_2px_6px_rgba(0,0,0,.45),0_10px_24px_rgba(0,0,0,.88)]
-                  [-webkit-text-stroke:0.5px_rgba(0,0,0,.22)]
+                  text-white
+                  drop-shadow-[0_8px_20px_rgba(0,0,0,.95)]
                 "
               >
                 رحلتك تبدأ
@@ -69,9 +68,8 @@ export default function Hero() {
                   font-extrabold
                   tracking-[-0.015em]
                   leading-none
-                  text-white
-                  [text-shadow:0_2px_6px_rgba(0,0,0,.45),0_8px_20px_rgba(0,0,0,.82)]
-                  [-webkit-text-stroke:0.4px_rgba(0,0,0,.18)]
+                  text-[#E8A87C]
+                  drop-shadow-[0_8px_22px_rgba(0,0,0,.95)]
                 "
               >
                 من الاختيار الصحيح
