@@ -66,12 +66,16 @@ export default function Hero() {
 
                 <span
                   className="
+                    text-[1.85rem]
+                    sm:text-[2.05rem]
+                    md:text-[3.4rem]
+                    font-black
                     text-[#E8A87C]
-                    [text-shadow:0_2px_6px_rgba(0,0,0,.45),0_10px_24px_rgba(0,0,0,.9)]
-                    [-webkit-text-stroke:0.25px_rgba(44,28,16,.45)]
+                    [text-shadow:0_2px_6px_rgba(0,0,0,.45),0_10px_24px_rgba(0,0,0,.90)]
+                    [-webkit-text-stroke:0.25px_rgba(45,28,16,.45)]
                   "
                 >
-                  تبدأ
+                  تبدأ...
                 </span>
               </span>
 
