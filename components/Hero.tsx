@@ -41,6 +41,7 @@ export default function Hero() {
               dir="rtl"
               className="
                 font-[family-name:var(--font-hero-arabic)]
+                md:font-[inherit]
                 text-center
                 md:text-right
                 leading-[0.98]

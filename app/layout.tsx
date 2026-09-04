@@ -3,7 +3,7 @@ import {
   Geist,
   Geist_Mono,
   Cormorant_Garamond,
-  Alexandria,
+  IBM_Plex_Sans_Arabic,
 } from "next/font/google";
 import "./globals.css";
 
@@ -24,9 +24,9 @@ const english = Cormorant_Garamond({
   display: "swap",
 });
 
-const heroArabic = Alexandria({
+const heroArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
-  weight: ["500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-hero-arabic",
   display: "swap",
 });
