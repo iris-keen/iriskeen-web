@@ -35,7 +35,8 @@ export default function Hero() {
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          <div className="w-full max-w-[620px] pt-20 md:pt-28">
+          {/* رفعنا المحتوى للأعلى */}
+          <div className="w-full max-w-[620px] pt-10 md:pt-20">
 
             <h1
               dir="rtl"
@@ -68,16 +69,16 @@ export default function Hero() {
                   font-bold
                   tracking-[-0.03em]
                   leading-none
-                  text-[#E8A87C]
-                  drop-shadow-[0_8px_22px_rgba(0,0,0,.9)]
+                  text-[#D89A73]
+                  drop-shadow-[0_10px_24px_rgba(0,0,0,.92)]
                 "
               >
                 من الاختيار الصحيح
               </span>
             </h1>
 
-            {/* زر واحد */}
-            <div className="mt-24 md:mt-28 flex justify-center md:justify-start">
+            {/* الزر */}
+            <div className="mt-20 md:mt-24 flex justify-center md:justify-start">
 
               <a
                 href="#hotels"
