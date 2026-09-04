@@ -34,60 +34,61 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 flex h-full items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
-
-          <div className="w-full max-w-[560px] pt-28 md:pt-32">
+          <div className="w-full max-w-[620px] pt-8 md:pt-20">
 
             <h1
               dir="rtl"
               className="text-center md:text-right leading-[1.05]"
             >
+              {/* رحلتك تبدأ */}
               <span
                 className="
                   block
-                  text-[1.8rem]
-                  sm:text-[2.1rem]
-                  md:text-[3.6rem]
+                  text-[2rem]
+                  sm:text-[2.2rem]
+                  md:text-[3.4rem]
                   font-semibold
                   tracking-tight
-                  text-[#E8A87C]
-                  drop-shadow-[0_6px_14px_rgba(0,0,0,.75)]
+                  text-white
+                  drop-shadow-[0_6px_16px_rgba(0,0,0,.8)]
                 "
               >
                 رحلتك تبدأ
               </span>
 
+              {/* من الاختيار الصحيح */}
               <span
                 className="
-                  mt-4
+                  mt-1
                   block
-                  text-[2.5rem]
-                  sm:text-[2.9rem]
-                  md:text-[4.8rem]
+                  text-[2rem]
+                  sm:text-[2.35rem]
+                  md:text-[3.8rem]
                   font-bold
-                  tracking-[-0.04em]
-                  text-white
+                  tracking-[-0.03em]
                   leading-none
-                  drop-shadow-[0_10px_24px_rgba(0,0,0,.9)]
+                  text-[#E8A87C]
+                  drop-shadow-[0_8px_22px_rgba(0,0,0,.9)]
                 "
               >
-                <span>من </span>
-                <span>الاختيار </span>
-                <span>الصحيح</span>
+                من الاختيار الصحيح
               </span>
             </h1>
 
+            {/* الوصف */}
             <p
               className="
-                mt-6
+                mt-12
+                md:mt-12
                 text-center
                 md:text-right
-                text-base
-                md:text-[1.35rem]
+                text-[0.95rem]
+                md:text-[1.1rem]
                 leading-7
-                md:leading-9
+                md:leading-8
                 font-medium
                 text-white
-                drop-shadow-[0_5px_14px_rgba(0,0,0,.85)]
+                drop-shadow-[0_5px_12px_rgba(0,0,0,.85)]
               "
             >
               تجارب سفر مصممة بعناية
@@ -96,8 +97,7 @@ export default function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-8 flex flex-col md:flex-row gap-4 w-[85%] md:w-auto mx-auto md:mx-0">
-
+            <div className="mt-12 flex flex-col md:flex-row gap-4 w-[85%] md:w-auto mx-auto md:mx-0">
               <a
                 href="#hotels"
                 className="
@@ -118,7 +118,6 @@ export default function Hero() {
                   transition-all
                   duration-300
                   hover:-translate-y-1
-                  hover:shadow-[0_20px_45px_rgba(15,61,62,.55)]
                 "
               >
                 ابدأ رحلتك
@@ -147,11 +146,9 @@ export default function Hero() {
               >
                 استكشف الفنادق
               </a>
-
             </div>
 
           </div>
-
         </div>
       </div>
     </section>
