@@ -35,7 +35,8 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          <div className="w-full max-w-[620px] pt-14 md:pt-24">
+          {/* نزلنا المحتوى قليلًا */}
+          <div className="w-full max-w-[620px] pt-20 md:pt-28">
 
             <h1
               dir="rtl"
@@ -45,9 +46,9 @@ export default function Hero() {
               <span
                 className="
                   block
-                  text-[2rem]
-                  sm:text-[2.2rem]
-                  md:text-[3.4rem]
+                  text-[1.8rem]
+                  sm:text-[2rem]
+                  md:text-[3.1rem]
                   font-semibold
                   tracking-tight
                   text-white
@@ -62,9 +63,9 @@ export default function Hero() {
                 className="
                   mt-1
                   block
-                  text-[2rem]
-                  sm:text-[2.35rem]
-                  md:text-[3.8rem]
+                  text-[1.9rem]
+                  sm:text-[2.2rem]
+                  md:text-[3.5rem]
                   font-bold
                   tracking-[-0.03em]
                   leading-none
@@ -79,13 +80,12 @@ export default function Hero() {
             {/* الوصف */}
             <p
               className="
-                mt-12
-                md:mt-12
+                mt-8
                 text-center
                 md:text-right
-                text-[1rem]
-                md:text-[1.15rem]
-                leading-8
+                text-[0.95rem]
+                md:text-[1.05rem]
+                leading-7
                 md:leading-8
                 font-medium
                 text-white
@@ -98,7 +98,7 @@ export default function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-12 flex flex-col md:flex-row gap-4 w-[85%] md:w-auto mx-auto md:mx-0">
+            <div className="mt-10 flex flex-col md:flex-row gap-4 w-[72%] md:w-auto mx-auto md:mx-0">
 
               <a
                 href="#hotels"
@@ -107,10 +107,9 @@ export default function Hero() {
                   bg-gradient-to-b
                   from-[#145254]
                   to-[#0F3D3E]
-                  px-7
-                  md:px-10
+                  px-5
+                  md:px-8
                   py-4
-                  md:py-4
                   text-base
                   md:text-lg
                   font-semibold
@@ -134,10 +133,9 @@ export default function Hero() {
                   border-white/30
                   bg-white/12
                   backdrop-blur-md
-                  px-7
-                  md:px-10
+                  px-5
+                  md:px-8
                   py-4
-                  md:py-4
                   text-base
                   md:text-lg
                   text-white
