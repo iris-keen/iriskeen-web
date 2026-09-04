@@ -3,7 +3,7 @@ import {
   Geist,
   Geist_Mono,
   Cormorant_Garamond,
-  Cairo,
+  Readex_Pro,
 } from "next/font/google";
 import "./globals.css";
 
@@ -24,9 +24,9 @@ const english = Cormorant_Garamond({
   display: "swap",
 });
 
-const heroArabic = Cairo({
+const heroArabic = Readex_Pro({
   subsets: ["arabic"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-hero-arabic",
   display: "swap",
 });
