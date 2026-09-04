@@ -35,8 +35,7 @@ export default function Hero() {
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          {/* رفعنا المحتوى للأعلى */}
-          <div className="w-full max-w-[620px] pt-10 md:pt-20">
+          <div className="w-full max-w-[620px] pt-6 md:pt-20">
 
             <h1
               dir="rtl"
@@ -46,8 +45,8 @@ export default function Hero() {
               <span
                 className="
                   block
-                  text-[1.8rem]
-                  sm:text-[2rem]
+                  text-[1.7rem]
+                  sm:text-[1.9rem]
                   md:text-[3.1rem]
                   font-semibold
                   tracking-tight
@@ -63,13 +62,13 @@ export default function Hero() {
                 className="
                   mt-1
                   block
-                  text-[1.9rem]
-                  sm:text-[2.2rem]
+                  text-[1.8rem]
+                  sm:text-[2.1rem]
                   md:text-[3.5rem]
                   font-bold
                   tracking-[-0.03em]
                   leading-none
-                  text-[#D89A73]
+                  text-[#E8A87C]
                   drop-shadow-[0_10px_24px_rgba(0,0,0,.92)]
                 "
               >
@@ -77,13 +76,13 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* الزر */}
-            <div className="mt-20 md:mt-24 flex justify-center md:justify-start">
+            {/* Button */}
+            <div className="mt-28 md:mt-24 flex justify-center md:justify-start">
 
               <a
                 href="#hotels"
                 className="
-                  w-[68%]
+                  w-[62%]
                   md:w-auto
                   rounded-full
                   bg-gradient-to-b
