@@ -38,30 +38,30 @@ export default function Hero() {
 
             <h1
               dir="rtl"
-              className="text-center md:text-right leading-[0.95]"
+              className="text-center md:text-right leading-[1.05]"
             >
-              <span className="block text-[2rem] sm:text-[2.3rem] md:text-[3.6rem] font-semibold tracking-tight text-[#E8A87C] [text-shadow:0_2px_12px_rgba(0,0,0,0.45)]">
+              <span className="block text-[1.8rem] sm:text-[2.1rem] md:text-[3.6rem] font-semibold tracking-tight text-[#E8A87C] [text-shadow:0_2px_12px_rgba(0,0,0,0.45)]">
                 رحلتك تبدأ
               </span>
 
-              <span className="mt-3 md:mt-4 block text-[2.8rem] sm:text-[3.2rem] md:text-[4.8rem] font-bold tracking-[-0.04em] text-white leading-none">
+              <span className="mt-4 block text-[2.5rem] sm:text-[2.9rem] md:text-[4.8rem] font-bold tracking-[-0.04em] text-white leading-none">
                 <span>من </span>
                 <span>الاختيار </span>
                 <span>الصحيح</span>
               </span>
             </h1>
 
-            <p className="mt-5 text-center md:text-right text-base md:text-[1.35rem] leading-7 md:leading-9 text-white/90">
+            <p className="mt-6 text-center md:text-right text-base md:text-[1.35rem] leading-7 md:leading-9 text-white [text-shadow:0_2px_10px_rgba(0,0,0,.6)]">
               تجارب سفر مصممة بعناية
               <br />
               بأفضل الأسعار وخدمة شخصية راقية.
             </p>
 
-            <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-5">
+            <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-5 w-[85%] md:w-auto mx-auto md:mx-0">
 
               <a
                 href="#hotels"
-                className="rounded-full bg-[#E8A87C] px-7 md:px-10 py-3.5 md:py-4 text-base md:text-lg font-semibold text-[#0F3D3E] text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                className="rounded-full bg-[#0F3D3E] px-7 md:px-10 py-3.5 md:py-4 text-base md:text-lg font-semibold text-white text-center transition-all duration-300 hover:bg-[#145254] hover:-translate-y-1 hover:shadow-2xl"
               >
                 ابدأ رحلتك
               </a>
@@ -74,10 +74,6 @@ export default function Hero() {
               </a>
 
             </div>
-
-            <p className="mt-6 text-center md:text-right text-sm tracking-[0.08em] text-white/70">
-              بداية رحلتك تستحق تجربة استثنائية.
-            </p>
 
           </div>
         </div>
