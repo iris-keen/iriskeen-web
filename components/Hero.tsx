@@ -39,7 +39,12 @@ export default function Hero() {
 
             <h1
               dir="rtl"
-              className="text-center md:text-right leading-[0.98]"
+              className="
+                font-[family-name:var(--font-hero-arabic)]
+                text-center
+                md:text-right
+                leading-[0.98]
+              "
             >
               {/* رحلتك تبدأ */}
               <span
@@ -78,7 +83,6 @@ export default function Hero() {
 
             {/* Button */}
             <div className="mt-36 md:mt-24 flex justify-center md:justify-start">
-
               <a
                 href="#hotels"
                 className="
@@ -105,7 +109,6 @@ export default function Hero() {
               >
                 ابدأ رحلتك
               </a>
-
             </div>
 
           </div>
