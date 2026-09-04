@@ -35,7 +35,8 @@ export default function Hero() {
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto flex w-full max-w-7xl justify-center md:justify-start px-8 md:px-20">
 
-          <div className="w-full max-w-[620px] pt-6 md:pt-20">
+          {/* رفعنا العنوان قليلاً */}
+          <div className="w-full max-w-[620px] pt-3 md:pt-20">
 
             <h1
               dir="rtl"
@@ -77,7 +78,7 @@ export default function Hero() {
             </h1>
 
             {/* Button */}
-            <div className="mt-28 md:mt-24 flex justify-center md:justify-start">
+            <div className="mt-36 md:mt-24 flex justify-center md:justify-start">
 
               <a
                 href="#hotels"
