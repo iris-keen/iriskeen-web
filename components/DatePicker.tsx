@@ -38,17 +38,27 @@ export default function DatePicker({
           {label}
         </p>
 
-        <div className="mt-3 grid grid-cols-[1fr_auto] items-center gap-3">
+        <div className="mt-3 flex items-center justify-between gap-2">
 
           <span
             dir="ltr"
-            className="justify-self-center whitespace-nowrap text-[14px] font-semibold tracking-tight text-[#0F3D3E]"
+            className="
+              flex-1
+              min-w-0
+              truncate
+              text-center
+              text-[13px]
+              md:text-[14px]
+              font-semibold
+              tracking-tight
+              text-[#0F3D3E]
+            "
           >
             {value ? formatDate(value) : "اختر التاريخ"}
           </span>
 
           <span
-            className={`mr-1 justify-self-end text-xs text-[#D4AF37] transition-transform duration-300 ${
+            className={`flex-shrink-0 text-[11px] text-[#D4AF37] transition-transform duration-300 ${
               open ? "rotate-180" : ""
             }`}
           >
