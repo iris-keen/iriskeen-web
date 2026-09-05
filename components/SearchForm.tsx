@@ -43,10 +43,10 @@ ${notes || "لا يوجد"}
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-14">
 
         {/* المدينة */}
-        <div className="col-span-2">
+        <div className="col-span-2 md:col-span-2">
           <CityDropdown
             value={city}
             onChange={(selectedCity) => {
@@ -57,7 +57,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الفندق */}
-        <div className="col-span-2">
+        <div className="col-span-2 md:col-span-4">
           <HotelDropdown
             city={city}
             value={hotel}
@@ -66,7 +66,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الوصول */}
-        <div className="col-span-1 min-w-0">
+        <div className="col-span-1 min-w-0 md:col-span-3">
           <DatePicker
             label="الوصول"
             value={checkIn}
@@ -75,7 +75,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* المغادرة */}
-        <div className="col-span-1 min-w-0">
+        <div className="col-span-1 min-w-0 md:col-span-3">
           <DatePicker
             label="المغادرة"
             value={checkOut}
@@ -84,8 +84,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الضيوف */}
-<div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
-
+        <div className="col-span-1 md:col-span-2 rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
 <p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
   الضيوف
 </p>
@@ -117,7 +116,7 @@ ${notes || "لا يوجد"}
 </div>
 
         {/* الغرف */}
-        <div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
+        <div className="col-span-2 md:hidden rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
 
           <p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
             الغرف
