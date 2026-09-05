@@ -84,37 +84,37 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الضيوف */}
-        <div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
+<div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
 
-          <p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
-            الضيوف
-          </p>
+<p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
+  الضيوف
+</p>
 
-          <div className="mt-3 flex items-center justify-center gap-5">
+<div className="mt-3 flex items-center justify-center gap-5">
 
-            <button
-              type="button"
-              onClick={() => setGuests((g) => Math.max(1, g - 1))}
-              className="text-2xl text-[#0F3D3E]"
-            >
-              −
-            </button>
+  <button
+    type="button"
+    onClick={() => setGuests((g) => Math.max(1, g - 1))}
+    className="text-lg md:text-xl font-medium text-[#0F3D3E] transition"
+  >
+    −
+  </button>
 
-            <span className="text-xl font-semibold text-[#0F3D3E]">
-              {guests}
-            </span>
+  <span className="text-[14px] md:text-[14px] font-semibold tracking-tight text-[#0F3D3E]">
+    {guests}
+  </span>
 
-            <button
-              type="button"
-              onClick={() => setGuests((g) => g + 1)}
-              className="text-2xl text-[#0F3D3E]"
-            >
-              +
-            </button>
+  <button
+    type="button"
+    onClick={() => setGuests((g) => g + 1)}
+    className="text-lg md:text-xl font-medium text-[#0F3D3E] transition"
+  >
+    +
+  </button>
 
-          </div>
+</div>
 
-        </div>
+</div>
 
         {/* الغرف */}
         <div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
@@ -128,19 +128,19 @@ ${notes || "لا يوجد"}
             <button
               type="button"
               onClick={() => setRooms((r) => Math.max(1, r - 1))}
-              className="text-2xl text-[#0F3D3E]"
+              className="text-lg md:text-xl font-medium text-[#0F3D3E] transition"
             >
               −
             </button>
 
-            <span className="text-xl font-semibold text-[#0F3D3E]">
+            <span className="text-[14px] font-semibold tracking-tight text-[#0F3D3E]">
               {rooms}
             </span>
 
             <button
               type="button"
               onClick={() => setRooms((r) => r + 1)}
-              className="text-2xl text-[#0F3D3E]"
+              className="text-lg md:text-xl font-medium text-[#0F3D3E] transition"
             >
               +
             </button>
@@ -178,6 +178,7 @@ ${notes || "لا يوجد"}
         </button>
 
       </div>
+
     </>
   );
 }
