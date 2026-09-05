@@ -95,7 +95,7 @@ export default function Hero() {
                   drop-shadow-[0_10px_30px_rgba(0,0,0,1)]
                 "
               >
-                من الاختيار الصحيح
+                  من الاختيار الصحيح    
               </span>
             </h1>
 
