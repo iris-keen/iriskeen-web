@@ -33,12 +33,12 @@ export default function CityDropdown({
 
         <div className="mt-2 flex items-center justify-between">
 
-          <span className="truncate text-lg font-semibold text-[#0F3D3E]">
+          <span className="truncate text-[14px] font-semibold tracking-tight text-[#0F3D3E]">
             {value}
           </span>
 
           <span
-            className={`text-base text-[#D4AF37] transition-transform duration-300 ${
+            className={`text-[11px] text-[#D4AF37] transition-transform duration-300 ${
               open ? "rotate-180" : ""
             }`}
           >

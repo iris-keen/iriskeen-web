@@ -33,22 +33,26 @@ export default function HotelDropdown({
         </p>
 
         <div className="mt-2 flex items-center justify-between">
-          <span className="truncate text-lg font-semibold text-[#0F3D3E]">
+
+          <span className="truncate text-[14px] font-semibold tracking-tight text-[#0F3D3E]">
             {value}
           </span>
 
           <span
-            className={`text-base text-[#D4AF37] transition-transform duration-300 ${
+            className={`text-[11px] text-[#D4AF37] transition-transform duration-300 ${
               open ? "rotate-180" : ""
             }`}
           >
             ▼
           </span>
+
         </div>
+
       </button>
 
       {open && (
         <div className="absolute right-0 z-50 mt-3 w-full overflow-hidden rounded-2xl border border-[#ECE9E3] bg-white shadow-2xl">
+
           {hotelList.map((hotel) => (
             <button
               key={hotel}
@@ -66,6 +70,7 @@ export default function HotelDropdown({
               {hotel}
             </button>
           ))}
+
         </div>
       )}
     </div>
