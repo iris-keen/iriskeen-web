@@ -116,7 +116,7 @@ ${notes || "لا يوجد"}
 </div>
 
         {/* الغرف */}
-        <div className="col-span-2 md:hidden rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
+        <div className="col-span-1 md:hidden rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
 
           <p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
             الغرف
