@@ -11,6 +11,7 @@ export default function SearchForm() {
   const [checkIn, setCheckIn] = useState<Date | undefined>();
   const [checkOut, setCheckOut] = useState<Date | undefined>();
   const [guests, setGuests] = useState(2);
+  const [rooms, setRooms] = useState(1);
   const [notes, setNotes] = useState("");
 
   const sendWhatsApp = () => {
@@ -27,6 +28,7 @@ export default function SearchForm() {
       checkOut ? checkOut.toLocaleDateString("ar-SA") : "-"
     }
 👥 عدد الضيوف: ${guests}
+🛏️ عدد الغرف: ${rooms}
 
 📝 ملاحظات:
 ${notes || "لا يوجد"}
@@ -41,10 +43,10 @@ ${notes || "لا يوجد"}
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-5 md:grid-cols-14">
+      <div className="grid grid-cols-2 gap-5">
 
         {/* المدينة */}
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-2">
           <CityDropdown
             value={city}
             onChange={(selectedCity) => {
@@ -55,7 +57,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الفندق */}
-        <div className="col-span-1 md:col-span-4">
+        <div className="col-span-2">
           <HotelDropdown
             city={city}
             value={hotel}
@@ -64,7 +66,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الوصول */}
-        <div className="col-span-1 md:col-span-3">
+        <div className="col-span-1 min-w-0">
           <DatePicker
             label="الوصول"
             value={checkIn}
@@ -73,7 +75,7 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* المغادرة */}
-        <div className="col-span-1 md:col-span-3">
+        <div className="col-span-1 min-w-0">
           <DatePicker
             label="المغادرة"
             value={checkOut}
@@ -82,30 +84,63 @@ ${notes || "لا يوجد"}
         </div>
 
         {/* الضيوف */}
-        <div className="col-span-2 md:col-span-2 rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
+        <div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
 
           <p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
             الضيوف
           </p>
 
-          <div className="mt-3 flex items-center justify-center gap-2">
+          <div className="mt-3 flex items-center justify-center gap-5">
 
             <button
               type="button"
               onClick={() => setGuests((g) => Math.max(1, g - 1))}
-              className="w-5 text-center text-[18px] leading-none text-[#0F3D3E] transition hover:text-[#D4AF37]"
+              className="text-2xl text-[#0F3D3E]"
             >
               −
             </button>
 
-            <span className="min-w-[20px] text-center text-[15px] font-semibold leading-none text-[#0F3D3E]">
+            <span className="text-xl font-semibold text-[#0F3D3E]">
               {guests}
             </span>
 
             <button
               type="button"
               onClick={() => setGuests((g) => g + 1)}
-              className="w-5 text-center text-[18px] leading-none text-[#0F3D3E] transition hover:text-[#D4AF37]"
+              className="text-2xl text-[#0F3D3E]"
+            >
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+        {/* الغرف */}
+        <div className="rounded-2xl border border-[#ECE9E3] bg-white px-5 py-4 transition-all duration-300 hover:border-[#D4AF37] hover:shadow-md">
+
+          <p className="text-xs font-medium tracking-wide text-[#8C7A4A] text-right">
+            الغرف
+          </p>
+
+          <div className="mt-3 flex items-center justify-center gap-5">
+
+            <button
+              type="button"
+              onClick={() => setRooms((r) => Math.max(1, r - 1))}
+              className="text-2xl text-[#0F3D3E]"
+            >
+              −
+            </button>
+
+            <span className="text-xl font-semibold text-[#0F3D3E]">
+              {rooms}
+            </span>
+
+            <button
+              type="button"
+              onClick={() => setRooms((r) => r + 1)}
+              className="text-2xl text-[#0F3D3E]"
             >
               +
             </button>
